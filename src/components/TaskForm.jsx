@@ -37,7 +37,7 @@ const TaskForm = ({ tasks, taskIndex, editstatus, seteditstatus, setTasks, taskD
       list[taskIndex] = Object.assign({ ...list[taskIndex] }, { ...taskData })
       setTasks(() => { return [...list] })
       seteditstatus(false)
-      toast.success('success', 'Task updated successfuly.')
+      toast.success('Task updated successfuly.')
     } else {
 
       setTasks((prev) => {

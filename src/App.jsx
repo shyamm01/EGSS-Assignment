@@ -29,7 +29,7 @@ const App = () => {
   const handleDelete = (taskIndex) => {
     const newTasks = tasks.filter((task, index) => index !== taskIndex);
     setTasks(newTasks);
-    toast('success', 'Task deleted succuessfuly.')
+    toast.success('Task deleted succuessfuly.')
   };
 
   const handleEdit = (taskIndex) => {
@@ -44,7 +44,7 @@ const App = () => {
 
   return (
     <div className="app">
-      <h1 style={{margin:"5px 20px"}}>To-do App</h1>
+      <h1 style={{ margin: "5px 20px" }}>To-do App</h1>
       <TaskForm taskIndex={taskId} tasks={tasks} editstatus={editstatus} seteditstatus={seteditstatus} setTasks={setTasks} taskData={taskData} setTaskData={setTaskData} />
       <main className="app_main">
         <TaskColumn
